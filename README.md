@@ -1,11 +1,24 @@
- tg eru8guu8ujhgt8uu980gjhutghjhtugj9t# firstrespiratory
- gdsuhgyfgyfgyfg
- vcedgydfyetdg
- nmjuoibgysyhggf huidfy9 ujiuyc9iu hfgujiysri8u rehyfiuyeifuif890uifnherjeuyf89eryhufkjiujf hnefiucudeuyhfghfy8oyeiikmkefujif9ikfjm 
- jnduewyiuuiewkmljnff jekhyryhuejh ewhuuiweruj8b 
-
-
-
- njieri9uwuyu9re
-
- olpoie0uiiweujru9i
+pipeline { 
+    agent any  
+    stages { 
+        stage('Build') { 
+            steps { 
+                // compile code  
+	// if successful, move build artifacts to the desired location 
+            } 
+        } 
+        stage('Test') {  
+            steps { 
+                // check if artifacts are present in the correct location 
+	// load test data into the database 
+	// execute the test case 
+	// continue only if tests passed 
+            } 
+        }uio 
+        stage('Deploy') {  
+            steps { 
+                // Fetch tested code and deploy it to production 
+            } 
+        } 
+    } 
+}
